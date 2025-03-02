@@ -47,13 +47,6 @@ do
 				Outline = '#FFFFFF',
 				Text = '#ffeded',
 				PlaceholderText = '#977d7d'
-			},
-            Curium = {
-				Name = 'Curium',
-				Accent = '#880e4f',
-				Outline = '#c2185b',
-				Text = '#fce4ec',
-				PlaceholderText = '#d81b60'
 			}
 		}
 	end
@@ -3893,8 +3886,30 @@ do
 				c('UICorner', {
 					CornerRadius = UDim.new(0, 12)
 				}),
-            }
 
+				}),
+				c('TextBox', {
+					Size = UDim2.new(1, -((ab.Padding * 2) + j.IconSize + ab.Padding), 1, 0),
+					Position = UDim2.new(1, -ab.Padding, 0, 0),
+					AnchorPoint = Vector2.new(1, 0),
+					BackgroundTransparency = 1,
+					TextXAlignment = 'Left',
+					FontFace = Font.new(b.Font, Enum.FontWeight.Medium),
+					TextSize = 17,
+					BackgroundTransparency = 1,
+					MultiLine = false,
+					PlaceholderText = 'Search in ' .. g,
+					ThemeTag = {
+						TextColor3 = 'Text',
+						PlaceholderColor3 = 'PlaceholderText'
+					}
+				}),
+				n,
+				k,
+				c('UISizeConstraint', {
+					MaxSize = Vector2.new(f.AbsoluteSize.X, math.huge)
+				})
+			})
 			function j.Open(p)
 				o.Visible = true
 				d(o, 0.35, {
