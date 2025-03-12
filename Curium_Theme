@@ -1,4 +1,3 @@
-pcall(function()
 local a
 a = {
 	cache = {},
@@ -5201,4 +5200,3 @@ function aa.CreateWindow(k, n)
 	return s
 end
 return aa
-end)
