@@ -164,7 +164,7 @@ local a = {
 		}
 	}
 }
-local b = Instance.new("CuriumGui")
+local b = Instance.new("ScreenGui")
 b.Parent = not game:GetService("RunService"):IsStudio() and game:GetService("CoreGui") or game:GetService("Players").LocalPlayer.PlayerGui;
 b.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 local c, d = game:GetService("UserInputService"), game:GetService("TweenService")
